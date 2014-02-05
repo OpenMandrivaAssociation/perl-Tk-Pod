@@ -1,15 +1,15 @@
 %define upstream_name    Tk-Pod
-%define upstream_version 0.9941
+%define upstream_version 0.9942
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.9941
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Simple Pod browser with hypertext capabilities
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Tk/Tk-Pod-0.9941.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Tk/Tk-Pod-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(File::Spec)
@@ -58,4 +58,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue May 18 2010 cpan2dist 0.9939-1mdv
 - initial mdv release, generated with cpan2dist
+
 
